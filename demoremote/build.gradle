@@ -1,0 +1,18 @@
+buildscript {
+    repositories {
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+    dependencies {
+        classpath 'com.github.chongyucaiyan:GradlePluginDemo:0.0.1'
+    }
+}
+
+apply plugin: 'com.github.cyc.greeting'
+
+// 配置扩展对象
+greetingExtension {
+    message = 'Hi'
+    greeter = 'demoremote'
+}
